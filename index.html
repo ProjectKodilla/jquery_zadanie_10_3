@@ -4,29 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jquery Carousel how it's work</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
-<body>
+<body class="container">
     <div id="carousel">
-        <ul>
-            <li><img src="images/1.jpg" alt="img"></li>
-            <li><img src="images/2.jpg" alt="img"></li>
-            <li><img src="images/3.jpg" alt="img"></li>
-            <li><img src="images/4.jpg" alt="img"></li>
-            <li><img src="images/5.jpg" alt="img"></li>
+        <ul class="controls">
+            <li id="1" class="controlStyle">
+                <i class="fa fa-circle-o fa-3x" aria-hidden="true"></i>
+                <i class="fa fa-circle fired fa-3x" aria-hidden="true"></i>
+            </li>
+            <li id="2" class="controlStyle">
+                <i class="fa fa-circle-o fa-3x" aria-hidden="true"></i>
+                <i class="fa fa-circle fired fa-3x" aria-hidden="true"></i>
+            </li>
+            <li id="3" class="controlStyle">
+                <i class="fa fa-circle-o fa-3x" aria-hidden="true"></i>
+                <i class="fa fa-circle fired fa-3x" aria-hidden="true"></i>
+            </li>
+            <li id="4" class="controlStyle">
+                <i class="fa fa-circle-o fa-3x" aria-hidden="true"></i>
+                <i class="fa fa-circle fired fa-3x" aria-hidden="true"></i>
+            </li>
+            <li id="5" class="controlStyle">
+                <i class="fa fa-circle-o fa-3x" aria-hidden="true"></i>
+                <i class="fa fa-circle fired fa-3x" aria-hidden="true"></i>
+            </li>
         </ul>
-        <i class="arrow fa fa-chevron-left fa-3x"></i>
-        <i class="arrow fa fa-chevron-right fa-3x"></i>
-        <div class="carousel-selected">
-            <i class="fa fa-circle bullet"></i>
-            <i class="fa fa-circle-thin bullet"></i>
-            <i class="fa fa-circle-thin bullet"></i>
-            <i class="fa fa-circle-thin bullet"></i>
-            <i class="fa fa-circle-thin bullet"></i>
-        </div>
+        <ul class="gallery">
+            <li class="photo"><img src="images/1.jpg" alt="img"></li>
+            <li class="photo"><img src="images/2.jpg" alt="img"></li>
+            <li class="photo"><img src="images/3.jpg" alt="img"></li>
+            <li class="photo"><img src="images/4.jpg" alt="img"></li>
+            <li class="photo"><img src="images/5.jpg" alt="img"></li>
+        </ul>
     </div>
 </body>
 </html>
