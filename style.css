@@ -6,6 +6,12 @@ body {
     margin: 0;
     background-color: #212529;
 }
+.container {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+}
 #carousel {
     margin: 0 auto;
     max-width: 800px;
@@ -13,41 +19,25 @@ body {
     overflow: hidden;
     position: relative;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: block;
+.controls {
+	margin-top: 20px;
+	text-align: center;
+	padding: 0;
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	width: 100%;
+	margin-bottom: 5px;
 }
-li {
-    list-style: none;
-    float: left;
+.controlStyle {
+	display: inline-block;
+	margin-right: 2px;
+	position: relative;
+	cursor: pointer;
 }
-.carousel-selected {
-    cursor: pointer;
-    position: absolute;
-    bottom: 2%;
-    left: 50%;
-}
-.fa {
-    color: #FFFFFF;
-    opacity: 0.4;
-}
-.fa:hover {
-    opacity: 1;
-}
-.fa-chevron-left,
-.fa-chevron-right {
-    line-height: 400px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #000000;
-}
-.fa-chevron-left {
-    left: 0;
-}
-.fa-chevron-right {
-    right: 0;
+.fired {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
 }
